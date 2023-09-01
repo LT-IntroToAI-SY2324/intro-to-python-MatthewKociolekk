@@ -19,19 +19,19 @@ print(flag)
 
 # lists - can hold a list of items of any type
 lane_tech = ["chicago", "high school", 1908, 60618, "addison/western"]
-print(lane_tech.reverse())
+# print(lane_tech.reverse())
 print(lane_tech)
-z = lane_tech.pop()
+z = lane_tech.pop() ##pop is used to store thing in list so like pop(3) = 60618 in this case
 print(z)
 
 
 # Indices
 print(lane_tech[1])
-print(lane_tech[-1])
+print(lane_tech[-1]) #the negative is from left so -1 would bring last thing in last -2 second from last and so on
 print(lane_tech[len(lane_tech)-1])
 
 # Slices
-print(lane_tech[1:3])
+print(lane_tech[1:3]) # like substring so 1:3 prints thing in spot 1 and 2 (right side in not inclusive)
 print(lane_tech[:3])
 print(lane_tech[1:])
 print(lane_tech[:])

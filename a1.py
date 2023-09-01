@@ -19,12 +19,16 @@ def absolute(n: int) -> int:
     """Gives the absolute value of the passed in number. Cannot use the built in
     function `abs`.
 
-    Args:
         n - the number to take the absolute value of
 
     Returns:
         the absolute value of the passed in number
     """
+    if n<0
+        return -1*n
+    else
+        return n
+
     raise NotImplementedError("absolute")
 
 
@@ -38,6 +42,8 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
+    return n * n factorial(n-1)
+
     raise NotImplementedError("factorial")
 
 

@@ -24,9 +24,9 @@ def absolute(n: int) -> int:
     Returns:
         the absolute value of the passed in number
     """
-    if n<0
-        return -1*n
-    else
+    if n < 0:
+        return -1 * n
+    else:
         return n
 
     raise NotImplementedError("absolute")
@@ -42,7 +42,7 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    return n * n factorial(n-1)
+    return n * factorial(n-1)
 
     raise NotImplementedError("factorial")
 
@@ -61,6 +61,12 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
+
+    for i in range(len(lst))
+
+        if i % 2 == 0 
+            return (i)
+
     raise NotImplementedError("every_other")
 
 

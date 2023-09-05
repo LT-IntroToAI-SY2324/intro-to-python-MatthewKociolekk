@@ -65,17 +65,17 @@ assert add_two(0) == 2, "add_two with input 0 test"
 # For Loop Template 1
 # do something for each item in a list
 lst = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-for el in lst:
+for el in lst: #for loops for each element in lst it prints it
     print(el)
 
 # For Loop Template 2
 # do something n times
-for i in range(5):
+for i in range(5): # range is used to fun loop x amount of time. Range 5 = 0 1 2 3 4 so runs 5 times, range 1,5 is 1 2 3 4
     print("Intro to AI")
 
 # For Loop Template 3
 # do something for each item in a list but we care about the index
-for r in range(len(lst)):
+for r in range(len(lst)): # len is length of list 
     if lst[r] == 'b':
         lst[r] = 'c'
 
@@ -83,8 +83,9 @@ print(lst)
 
 # Dictionaries
 
-dict = {"name": "rob", "age": 30}
-print(dict["age"])
+dict = {"name": "rob", "age": 30} # to create dictionary use curly barakets the dict is just the name you can name it wtvr, so in
+                                 # the : assigns righ to left so when u print age it prints 30 cause 30 is assighned to age
+print(dict["age"]) 
 
 # Random
 import random
@@ -95,7 +96,7 @@ print(dinner)
 
 # f String
 age = 25
-# print("Mary is " + age + " years old")
+# print("Mary is " + age + " years old") or you can use , instead of + in , it includes the space 
 print(f"Mary is {age} years old")
 
 

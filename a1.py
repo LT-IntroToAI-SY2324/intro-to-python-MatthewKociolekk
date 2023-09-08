@@ -42,7 +42,13 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    return n * factorial(n-1)
+    if n == 0:
+        return 1
+    else:
+        result = 1
+    for i in range(1, n + 1):
+        result *= i
+        return result
 
     raise NotImplementedError("factorial")
 
@@ -62,10 +68,9 @@ def every_other(lst: List[T]) -> List[T]:
         a list of every of other item in the original list starting with the first
     """
 
-    for i in range(len(lst))
-
-        if i % 2 == 0 
-            return (i)
+    for i in range(len(lst)):
+        if i % 2 == 0: 
+            return (list[i])
 
     raise NotImplementedError("every_other")
 
@@ -80,6 +85,14 @@ def sum_list(lst: List[int]) -> int:
     Returns:
         the sum of the passed in list
     """
+
+    for i in range(len(lst)):
+        x = 0
+        x = x+list[i]
+
+    return x
+        
+
     raise NotImplementedError("sum_list")
 
 

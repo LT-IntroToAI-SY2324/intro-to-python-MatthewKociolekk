@@ -29,8 +29,6 @@ def absolute(n: int) -> int:
     else:
         return n
 
-    raise NotImplementedError("absolute")
-
 
 def factorial(n: int) -> int:
     """Takes a number n, and computes the factorial n! You can assume the passed in
@@ -42,15 +40,11 @@ def factorial(n: int) -> int:
     Returns:
         factorial of the passed in number
     """
-    if n == 0:
-        return 1
-    else:
-        result = 1
-    for i in range(1, n + 1):
+    result = 1
+    for i in range(1,n+1):
         result *= i
-        return result
+    return result
 
-    raise NotImplementedError("factorial")
 
 
 T = TypeVar("T")
@@ -67,12 +61,14 @@ def every_other(lst: List[T]) -> List[T]:
     Returns:
         a list of every of other item in the original list starting with the first
     """
-
+    new_list = []
     for i in range(len(lst)):
-        if i % 2 == 0: 
-            return (list[i])
+        if i % 2 == 0:
+            new_list.append(lst[i])
+    return(new_list)       
 
-    raise NotImplementedError("every_other")
+    
+
 
 
 def sum_list(lst: List[int]) -> int:
@@ -86,14 +82,12 @@ def sum_list(lst: List[int]) -> int:
         the sum of the passed in list
     """
 
-    for i in range(len(lst)):
-        x = 0
-        x = x+list[i]
+    total = 0
+    for num in lst:
+        total += num
+    return total
 
-    return x
-        
-
-    raise NotImplementedError("sum_list")
+    
 
 
 def mean(lst: List[int]) -> float:
@@ -105,7 +99,12 @@ def mean(lst: List[int]) -> float:
     Returns:
         the mean of the passed in list
     """
-    raise NotImplementedError("mean")
+
+    total = sum(lst)
+    mean = total / len(lst)
+    return mean
+    print (mean)
+
 
 
 def median(lst: List[int]) -> float:
@@ -120,7 +119,16 @@ def median(lst: List[int]) -> float:
     Returns:
         the median of the passed in list
     """
-    raise NotImplementedError("median")
+    n = len(lst)
+    if n % 2 == 1:
+        # If the list has an odd number of elements, return the middle element
+        return lst[n // 2]
+    else:
+        # If the list has an even number of elements, return the average of the two middle elements
+        middle1 = lst[(n // 2) - 1]
+        middle2 = lst[n // 2]
+        return (middle1 + middle2) / 2
+    
 
 
 def duck_duck_goose(lst: List[str]) -> List[str]:

@@ -14,10 +14,12 @@ Mr. Berg will look at all your files to determine what you have completed.  If t
 
 1. What is your initial thoughts about the python programming language?
 
-
+Its very confusing to me since i came from knowing java pretty well coming from ap csa its quite the adjustment. Theres a lot less code you have to write like for for loops you can need to write the whole x =0 : etc.. stuff which i am not used to. But once i slowly im strting to understand it more and more and overall I like it its less typing than java and like make sense logiaclly
 
 2. Describe some similarities and differences that you found between python and other programming languages you have used in the past?
 
-
+Some similiarites between python and java is they can achive the same goal and both have the same fundemtals like both have for and while loops, both have iuf statmeents, you assighn variables the same way, has the basic math stuff and many more. The main diffrence is not needed the semi colons at the end of every line and also not needing to like setup stuff as much instad yhtin interpets your code and figures out on its own lik what data type and stuff like that which i think it pretty cool.
 
 3. What are some things that you learned through this assignment?
+
+Main things I learned are like the basics of pyhton and I feel i have somewhat of a foundation in pyhton now which i can build with more practive and time. Also learning the capablites of python which seem pretty cool and i am exited to see what comes in the future.
